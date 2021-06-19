@@ -61,20 +61,36 @@ main {
 }
 
 .photo.sky {
+    /* FOUC limited */
     background-color: #5b4d3b;
-    background-image: linear-gradient(to bottom, #241a1c 0%, #241a1c 35%, #5b4d3b 40%, #5b4d3b 42%, #050403 43%, #050403 56%,#794a2a 68%, #b8a47d 100%);
+    background-image: linear-gradient(to bottom,
+        #241a1c 0%,
+        #241a1c 29%,
+        #2e2934 32%,
+        #2e2934 33%,
+        #301f1d 35%,
+        #5b4d3b 39%,
+        #3b2b26 41%,
+        #5b4d3b 42%,
+        #050403 43%,
+        #0e0b05 50%,
+        #050403 54%,
+        #552f15 62%,
+        #794a2a 68%,
+        #73755e 100%
+    );
 }
 
 .photo.background {
-    transform: translateX(-50%) translateY(-50%) translateZ(5px);
+    transform: translateX(-50%) translateY(-50%) translateZ(13px);
 }
 
 .photo.signal {
-    transform: translateX(-50%) translateY(-50%) translateZ(9px);
+    transform: translateX(-50%) translateY(-50%) translateZ(5px);
 }
 
 .photo.building-c {
-    transform: translateX(-50%) translateY(-50%) translateZ(12px);
+    transform: translateX(-50%) translateY(-50%) translateZ(19px);
 }
 
 .photo.building-a {
