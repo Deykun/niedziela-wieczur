@@ -35,6 +35,12 @@ main {
     margin-top: -150px;
 }
 
+@media screen and (max-width: 700px) {
+    .plane {
+        transform: scale(0.4);
+    }
+}
+
 .js-tilt {
     position: relative;
     transform-style: preserve-3d;
@@ -69,7 +75,7 @@ main {
         #2e2934 32%,
         #2e2934 33%,
         #301f1d 35%,
-        #5b4d3b 39%,
+        #28241f 39%,
         #3b2b26 41%,
         #5b4d3b 42%,
         #050403 43%,
@@ -79,6 +85,12 @@ main {
         #794a2a 68%,
         #73755e 100%
     );
+}
+
+.photo.sky.blured {
+    filter: blur(5px);
+    height: 450px;
+    width: 600px;
 }
 
 .photo.background {
@@ -208,6 +220,12 @@ main {
     width: 10vw;
     background-color: transparent;
     transition: border .2s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+    .turn-off-border {
+        display: none;
+    }
 }
 
 .turn-off-border.left:hover,

@@ -9,6 +9,7 @@
         <meta name="twitter:image" content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-zdjecie.png" />
         <meta name="twitter:title" content="Niedziela wieczur...." />
         <meta name="twitter:description" content="I humor popsuty...." />
+        <meta property="og:image" content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-demotywator.jpg" />
         <meta property="og:image" content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-zdjecie.png" />
         <meta property="og:title" content="Niedziela wieczur...." />
         <meta property="og:description" content="I humor popsuty...." />
@@ -37,6 +38,7 @@
             <div class="plane">
                 <div class="js-tilt">
                     <img class="photo mode-flat-photo" src="./niedziela-wieczur-zdjecie.png" alt="Na zdjęciu polskie blokowisko wieczurem, klimat zdjęcia wywołuje u osoby oglądającej uczucie nostalgii">
+                    <img class="photo mode-layered-photo sky blured" src="./images/niedziela-wieczur-niebo.jpg" alt="Wieczorne niebo">
                     <img class="photo mode-layered-photo sky" src="./images/niedziela-wieczur-niebo.jpg" alt="Wieczorne niebo">
                     <img class="photo mode-layered-photo background" src="./images/niedziela-wieczur-ziemia.png" alt="Na zdjęciu polskie blokowisko wieczurem, klimat zdjęcia wywołuje u osoby oglądającej uczucie nostalgii">
                     <img class="photo mode-layered-photo signal" loading="lazy" src="./images/antena-z-mema.png" alt="Antena widoczna z blokowiska o memie humor popsuty">
@@ -83,7 +85,9 @@
                 }
 
                 $('.js-tilt').tilt({
-                    scale: 0.9,
+                    // scale: 1.2,
+                    speed: 1500, // enter/exit
+                    // perspective: 1000,
                 });
 
                 $('#photo-switch').on('click', () => {
