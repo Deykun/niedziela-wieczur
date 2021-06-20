@@ -35,11 +35,19 @@ main {
     margin-top: -150px;
 }
 
+@media screen and (max-width: 700px) {
+    .plane {
+        transform: scale(0.4);
+    }
+}
+
 .js-tilt {
     position: relative;
     transform-style: preserve-3d;
 
     cursor: move;
+
+    transition: .003s ease-in-out;
 }
 
 /* firefox jagged edge fix */
@@ -69,7 +77,7 @@ main {
         #2e2934 32%,
         #2e2934 33%,
         #301f1d 35%,
-        #5b4d3b 39%,
+        #28241f 39%,
         #3b2b26 41%,
         #5b4d3b 42%,
         #050403 43%,
@@ -79,6 +87,12 @@ main {
         #794a2a 68%,
         #73755e 100%
     );
+}
+
+.photo.sky.blured {
+    filter: blur(5px);
+    height: 450px;
+    width: 600px;
 }
 
 .photo.background {
@@ -130,29 +144,16 @@ main {
 }
 
 .border::before {
+    box-sizing: border-box;
     content: '';
     position: absolute;
-    top: -33px;
-    left: -33px;
-    width: calc(100% + 30px + 3px + 30px + 3px);
-    height: calc(100% + 30px + 3px + 120px + 3px);
-    border: 30px solid black;
-    border-bottom-width: 120px;
-}
-
-/* fake background */
-.border::after {
-    content: '';
-    position: absolute;
-    top: -133px;
-    left: -133px;
-    width: calc(100% + 100px + 66px + 100px);
-    height: calc(100% + 100px + 66px + 110px + 100px);
-    border: 100px solid black; /* 352510 */
-    border-bottom-width: 120px;
-
-    border-radius: 12px;
-    box-shadow: 0 0 55px rgb(111, 85, 57, 0.05);
+    top: -703px; /* border of rame + padding */
+    left: -703px;
+    height: 100%;
+    width: 100%;
+    width: calc(100% + 703px + 703px);
+    height: calc(100% + 703px + 703px);
+    border: 700px solid black;
 }
 
 .text {
@@ -167,9 +168,9 @@ main {
     transform: translateX(-50%) translateY(-50%) translateZ(115px);
 }
 
-.js-tilt[style] .text {
-    top: calc(100% + 20px);
-}
+/* .js-tilt[style] .text { */
+    /* top: calc(100% + 20px); */
+/* } */
 
 .title,
 .subtitle {
@@ -208,6 +209,12 @@ main {
     width: 10vw;
     background-color: transparent;
     transition: border .2s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+    .turn-off-border {
+        display: none;
+    }
 }
 
 .turn-off-border.left:hover,

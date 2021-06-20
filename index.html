@@ -10,6 +10,7 @@
         <meta name="twitter:title" content="Niedziela wieczur...." />
         <meta name="twitter:description" content="I humor popsuty...." />
         <meta property="og:image" content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-zdjecie.png" />
+        <meta property="og:image" content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-demotywator.jpg" />
         <meta property="og:title" content="Niedziela wieczur...." />
         <meta property="og:description" content="I humor popsuty...." />
         <meta property="og:site_name" content="Niedziela wieczur...." />
@@ -37,6 +38,7 @@
             <div class="plane">
                 <div class="js-tilt">
                     <img class="photo mode-flat-photo" src="./niedziela-wieczur-zdjecie.png" alt="Na zdjęciu polskie blokowisko wieczurem, klimat zdjęcia wywołuje u osoby oglądającej uczucie nostalgii">
+                    <img class="photo mode-layered-photo sky blured" src="./images/niedziela-wieczur-niebo.jpg" alt="Wieczorne niebo">
                     <img class="photo mode-layered-photo sky" src="./images/niedziela-wieczur-niebo.jpg" alt="Wieczorne niebo">
                     <img class="photo mode-layered-photo background" src="./images/niedziela-wieczur-ziemia.png" alt="Na zdjęciu polskie blokowisko wieczurem, klimat zdjęcia wywołuje u osoby oglądającej uczucie nostalgii">
                     <img class="photo mode-layered-photo signal" loading="lazy" src="./images/antena-z-mema.png" alt="Antena widoczna z blokowiska o memie humor popsuty">
@@ -72,36 +74,51 @@
                 </a>
             </nav>
         </main>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+        <script src="./scripts/helpers.js"></script>
+        <script src="./scripts/libs/vanilla-tilt.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> -->
         <script>
-            $(document).ready(function() {
-                const shouldTurnOnOMode = window.location.hash === '#wieczor';
-                console.log('window.location.hash', window.location.hash);
-                if (shouldTurnOnOMode) {
-                    $('body').addClass('o-letter');
-                }
+            domReady(() => {
+                const elToTilt = document.querySelector(".js-tilt");
 
-                $('.js-tilt').tilt({
-                    scale: 0.9,
+                VanillaTilt.init(elToTilt, {
+                    scale: 1,
+                    reverse: true,
+                    max: 30,
+                    speed: 300, // enter/exit
+                    'full-page-listening': true,
                 });
-
-                $('#photo-switch').on('click', () => {
-                    $('body').toggleClass('flat-photo');
-                })
-
-                $('#letter-switch').on('click', () => {
-                    const shouldTurnOffOMode = $('body').hasClass('o-letter');
-
-                    if (shouldTurnOffOMode) {
-                        $('body').removeClass('o-letter');
-                        window.location.hash = '';
-                    } else {
-                        $('body').addClass('o-letter');
-                        window.location.hash = 'wieczor';
-                    }  
-                })
             });
+            // $(document).ready(function() {
+            //     const shouldTurnOnOMode = window.location.hash === '#wieczor';
+            //     console.log('window.location.hash', window.location.hash);
+            //     if (shouldTurnOnOMode) {
+            //         $('body').addClass('o-letter');
+            //     }
+
+            //     $('.js-tilt').tilt({
+            //         // scale: 1.2,
+            //         speed: 1500, // enter/exit
+            //         // perspective: 1000,
+            //     });
+
+            //     $('#photo-switch').on('click', () => {
+            //         $('body').toggleClass('flat-photo');
+            //     })
+
+            //     $('#letter-switch').on('click', () => {
+            //         const shouldTurnOffOMode = $('body').hasClass('o-letter');
+
+            //         if (shouldTurnOffOMode) {
+            //             $('body').removeClass('o-letter');
+            //             window.location.hash = '';
+            //         } else {
+            //             $('body').addClass('o-letter');
+            //             window.location.hash = 'wieczor';
+            //         }  
+            //     })
+            // });
         </script>
     </body>
 </html>
