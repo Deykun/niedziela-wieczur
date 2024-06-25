@@ -1,111 +1,289 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Niedziela wieczur.... I humor popsuty....</title>
-        <meta name="description" content="I humor popsuty...." />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-zdjecie.png" />
-        <meta name="twitter:title" content="Niedziela wieczur...." />
-        <meta name="twitter:description" content="I humor popsuty...." />
-        <meta property="og:image" content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-demotywator.jpg" />
-        <meta property="og:image" content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-zdjecie.png" />
-        <meta property="og:title" content="Niedziela wieczur...." />
-        <meta property="og:description" content="I humor popsuty...." />
-        <meta property="og:site_name" content="Niedziela wieczur...." />
-        <link href="./styles.css" rel="stylesheet" type='text/css' />
-        <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./favicons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-        <link rel="manifest" href="./manifest.json">
-        <meta name="msapplication-TileColor" content="#000000">
-        <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
-        <meta name="theme-color" content="#000000">
-    </head>
-    <body>
-        <main>
-            <div class="plane">
-                <div class="js-tilt">
-                    <img class="photo mode-flat-photo" src="./niedziela-wieczur-zdjecie.png" alt="Na zdjęciu polskie blokowisko wieczurem, klimat zdjęcia wywołuje u osoby oglądającej uczucie nostalgii">
-                    <img class="photo mode-layered-photo sky blured" src="./images/niedziela-wieczur-niebo.jpg" alt="Wieczorne niebo">
-                    <img class="photo mode-layered-photo sky" src="./images/niedziela-wieczur-niebo.jpg" alt="Wieczorne niebo">
-                    <img class="photo mode-layered-photo background" src="./images/niedziela-wieczur-ziemia.png" alt="Na zdjęciu polskie blokowisko wieczurem, klimat zdjęcia wywołuje u osoby oglądającej uczucie nostalgii">
-                    <img class="photo mode-layered-photo signal" loading="lazy" src="./images/antena-z-mema.png" alt="Antena widoczna z blokowiska o memie humor popsuty">
-                    <img class="photo mode-layered-photo building-c" loading="lazy" src="./images/blokowisko-niedziela.png" alt="Budynki na ulicy podleśnej w Warszawie z mema">
-                    <img class="photo mode-layered-photo building-a" loading="lazy" src="./images/blok-z-niedziela-wieczur.png" alt="Blok z niedziela wieczó ul. Klaudyny 34, 01-684 Warszawa">
-                    <img class="photo mode-layered-photo building-a-front" loading="lazy" src="./images/blok-z-niedziela-wieczur-elewacja.png" alt="Elewacja budynku z Niedziela wieczur....">
-                    <img class="photo mode-layered-photo trees" loading="lazy" src="./images/niedziela-wieczur-drzewa.png" alt="Drzewa na blokowisku">
-                    <img class="photo mode-layered-photo building-b" loading="lazy" src="./images/bloki-niedziela-wieczur.png" alt="Blok na ulicy Klaudyny 36">
-                    <img class="photo mode-layered-photo building-b-front" loading="lazy" src="./images/bloki-niedziela-wieczur-elewacja.png" alt="Elewacja jednego z bloków">
-                    <div class="border"></div>
-                    <div class="text">
-                        <h1 class="title">Niedziela wiecz<span class="mode-o-letter">ór</span><span class="mode-u-letter">ur....</span></h1>
-                        <h2 class="subtitle">I humor popsuty....</h2>
-                    </div>
-                </div>                
-            </div>
-            <div class="turn-off-border left"></div>
-            <div class="turn-off-border right"></div>
-            <nav class="main-nav">
-                <button id="photo-switch">
-                    <span class="mode-flat-photo" title="Włącz tryb 3D">2D</span>
-                    <span class="mode-layered-photo" title="Włącz tryb 2D">3D</span>
-                </button>
-                <button id="letter-switch">
-                    <span class="mode-u-letter" title="Zmień na ó">u</span>
-                    <span class="mode-o-letter" title="Zmien na u">ó</span>
-                </button>
-                <a href="https://github.com/Deykun/niedziela-wieczur" target="_blank" rel="noopener noreferrer">
-                    <span title="Repozytorium">git</span>
-                </a>
-                <a href="https://goo.gl/maps/5t7vDcJYCNNp7JhBA" target="_blank" rel="noopener noreferrer">
-                    <span title="Otwórz w Google Maps">🌎</span>
-                </a>
-            </nav>
-        </main>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                const shouldTurnOnOMode = window.location.hash === '#wieczor';
-                console.log('window.location.hash', window.location.hash);
-                if (shouldTurnOnOMode) {
-                    $('body').addClass('o-letter');
-                }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Niedziela wieczur.... I humor popsuty....</title>
+    <meta name="description" content="I humor popsuty...." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-zdjecie.png"
+    />
+    <meta name="twitter:title" content="Niedziela wieczur...." />
+    <meta name="twitter:description" content="I humor popsuty...." />
+    <meta
+      property="og:image"
+      content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-demotywator.jpg"
+    />
+    <meta
+      property="og:image"
+      content="http://deykun.it/niedziela-wieczur/niedziela-wieczur-zdjecie.png"
+    />
+    <meta property="og:title" content="Niedziela wieczur...." />
+    <meta property="og:description" content="I humor popsuty...." />
+    <meta property="og:site_name" content="Niedziela wieczur...." />
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta
+      name="msapplication-TileImage"
+      content="./favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body>
+    <main>
+      <div class="plane">
+        <div class="js-tilt">
+          <img
+            class="photo mode-flat-photo"
+            src="./niedziela-wieczur-zdjecie.png"
+            alt="Na zdjęciu polskie blokowisko wieczurem, klimat zdjęcia wywołuje u osoby oglądającej uczucie nostalgii"
+          />
+          <img
+            class="photo mode-layered-photo sky end"
+            src="./images/niedziela-wieczur-niebo.jpg"
+            alt="Wieczorne niebo"
+          />
+          <img
+            class="photo mode-layered-photo sky blured"
+            src="./images/niedziela-wieczur-niebo.jpg"
+            alt="Wieczorne niebo"
+          />
+          <img
+            class="photo mode-layered-photo sky"
+            src="./images/niedziela-wieczur-niebo.jpg"
+            alt="Wieczorne niebo"
+          />
+          <img
+            class="photo mode-layered-photo background"
+            src="./images/niedziela-wieczur-ziemia.png"
+            alt="Na zdjęciu polskie blokowisko wieczurem, klimat zdjęcia wywołuje u osoby oglądającej uczucie nostalgii"
+          />
+          <img
+            class="photo mode-layered-photo signal"
+            loading="lazy"
+            src="./images/antena-z-mema.png"
+            alt="Antena widoczna z blokowiska o memie humor popsuty"
+          />
+          <img
+            class="photo mode-layered-photo building-c"
+            loading="lazy"
+            src="./images/blokowisko-niedziela.png"
+            alt="Budynki na ulicy podleśnej w Warszawie z mema"
+          />
+          <img
+            class="photo mode-layered-photo building-a"
+            loading="lazy"
+            src="./images/blok-z-niedziela-wieczur.png"
+            alt="Blok z niedziela wieczó ul. Klaudyny 34, 01-684 Warszawa"
+          />
+          <img
+            class="photo mode-layered-photo building-a-front"
+            loading="lazy"
+            src="./images/blok-z-niedziela-wieczur-elewacja.png"
+            alt="Elewacja budynku z Niedziela wieczur...."
+          />
+          <img
+            class="photo mode-layered-photo trees"
+            loading="lazy"
+            src="./images/niedziela-wieczur-drzewa.png"
+            alt="Drzewa na blokowisku"
+          />
+          <img
+            class="photo mode-layered-photo building-b"
+            loading="lazy"
+            src="./images/bloki-niedziela-wieczur.png"
+            alt="Blok na ulicy Klaudyny 36"
+          />
+          <img
+            class="photo mode-layered-photo building-b-front"
+            loading="lazy"
+            src="./images/bloki-niedziela-wieczur-elewacja.png"
+            alt="Elewacja jednego z bloków"
+          />
+          <div class="border"></div>
+          <div class="text">
+            <h1 class="title">
+              Niedziela wiecz<span class="mode-o-letter">ór</span
+              ><span class="mode-u-letter">ur....</span>
+            </h1>
+            <h2 class="subtitle">I humor popsuty....</h2>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <button id="photo-switch">
+          <span class="mode-flat-photo" title="Włącz tryb 3D"
+            ><svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:serif="http://www.serif.com/"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M21 0h-18c-1.657 0-3 1.343-3 3v18c0 1.657 1.343 3 3 3h18c1.657 0 3-1.343 3-3v-18c0-1.657-1.343-3-3-3m0 2c.552 0 1 .449 1 1v18c0 .552-.448 1-1 1h-18c-.551 0-1-.448-1-1v-18c0-.551.449-1 1-1h18z"
+              />
+            </svg>
+          </span>
+          <span class="mode-layered-photo" title="Włącz tryb 2D"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0l-11 6v12.131l11 5.869 11-5.869v-12.066l-11-6.065zm7.91 6.646l-7.905 4.218-7.872-4.294 7.862-4.289 7.915 4.365zm-16.91 1.584l8 4.363v8.607l-8-4.268v-8.702zm10 12.97v-8.6l8-4.269v8.6l-8 4.269zm6.678-5.315c.007.332-.256.605-.588.612-.332.007-.604-.256-.611-.588-.006-.331.256-.605.588-.612.331-.007.605.256.611.588zm-2.71-1.677c-.332.006-.595.28-.588.611.006.332.279.595.611.588s.594-.28.588-.612c-.007-.331-.279-.594-.611-.587zm-2.132-1.095c-.332.007-.595.281-.588.612.006.332.279.594.611.588.332-.007.594-.28.588-.612-.007-.331-.279-.594-.611-.588zm-9.902 2.183c.332.007.594.281.588.612-.007.332-.279.595-.611.588-.332-.006-.595-.28-.588-.612.005-.331.279-.594.611-.588zm1.487-.5c-.006.332.256.605.588.612s.605-.257.611-.588c.007-.332-.256-.605-.588-.611-.332-.008-.604.255-.611.587zm2.132-1.094c-.006.332.256.605.588.612.332.006.605-.256.611-.588.007-.332-.256-.605-.588-.612-.332-.007-.604.256-.611.588zm3.447-5.749c-.331 0-.6.269-.6.6s.269.6.6.6.6-.269.6-.6-.269-.6-.6-.6zm0-2.225c-.331 0-.6.269-.6.6s.269.6.6.6.6-.269.6-.6-.269-.6-.6-.6zm0-2.031c-.331 0-.6.269-.6.6s.269.6.6.6.6-.269.6-.6-.269-.6-.6-.6z"
+              />
+            </svg>
+          </span>
+        </button>
+        <button id="letter-switch">
+          <span class="mode-u-letter" title="Zmień na ó">u</span>
+          <span class="mode-o-letter" title="Zmien na u">ó</span>
+        </button>
+        <a
+          href="https://github.com/Deykun/niedziela-wieczur"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span title="Repozytorium"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+          </span>
+        </a>
+        <a
+          href="https://goo.gl/maps/5t7vDcJYCNNp7JhBA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span title="Otwórz w Google Maps">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 1C8.852 1 6 3.553 6 6.702 6 9.85 8.602 13.609 12 19c3.398-5.391 6-9.15 6-12.298C18 3.553 15.149 1 12 1zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm8 6h-3.135c-.385.641-.798 1.309-1.232 2h3.131l.5 1H15l-.344.544-.289.456h.558l.858 2H8.295l.858-2h.479l-.289-.456L9 18H6.958l-1.011-1h2.42c-.435-.691-.848-1.359-1.232-2H4l-4 8h24l-4-8zM7.206 21h-3.97L5 17.472 6.516 19h1.549l-.859 2zm8.808-2h3.75l1 2h-3.892l-.858-2z"
+              />
+            </svg>
+          </span>
+        </a>
+      </nav>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const shouldTurnOnOMode = window.location.hash === "#wieczor";
+        console.log("window.location.hash", window.location.hash);
+        if (shouldTurnOnOMode) {
+          $("body").addClass("o-letter");
+        }
 
-                $('.js-tilt').tilt({
-                    // scale: 1.2,
-                    speed: 1500, // enter/exit
-                    // perspective: 1000,
-                });
+        $(".js-tilt").tilt({
+          // scale: 1.2,
+          speed: 1500, // enter/exit
+          // perspective: 1000,
+        });
 
-                $('#photo-switch').on('click', () => {
-                    $('body').toggleClass('flat-photo');
-                })
+        $("#photo-switch").on("click", () => {
+          $("body").toggleClass("flat-photo");
+        });
 
-                $('#letter-switch').on('click', () => {
-                    const shouldTurnOffOMode = $('body').hasClass('o-letter');
+        $("#letter-switch").on("click", () => {
+          const shouldTurnOffOMode = $("body").hasClass("o-letter");
 
-                    if (shouldTurnOffOMode) {
-                        $('body').removeClass('o-letter');
-                        window.location.hash = '';
-                    } else {
-                        $('body').addClass('o-letter');
-                        window.location.hash = 'wieczor';
-                    }  
-                })
-            });
-        </script>
-    </body>
+          if (shouldTurnOffOMode) {
+            $("body").removeClass("o-letter");
+            window.location.hash = "";
+          } else {
+            $("body").addClass("o-letter");
+            window.location.hash = "wieczor";
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
