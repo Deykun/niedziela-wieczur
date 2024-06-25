@@ -29,6 +29,7 @@ main {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .plane {
@@ -161,6 +162,14 @@ main {
     background: linear-gradient(to right, black calc(100vw - 197px), transparent calc(100vw - 197px), transparent calc(100vw + 197px), black calc(100vw + 197px)), linear-gradient(to bottom, black calc(100vw - 147px), transparent calc(100vw - 147px), transparent calc(100vw + 147px), black calc(100vw + 147px)) !important;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media screen and (max-width: 700px) {
+    .border::before {
+        width: 200vh;
+        height: 200vh;
+        background: linear-gradient(to right, black calc(100vh - 197px), transparent calc(100vh - 197px), transparent calc(100vh + 197px), black calc(100vh + 197px)), linear-gradient(to bottom, black calc(100vh - 147px), transparent calc(100vh - 147px), transparent calc(100vh + 147px), black calc(100vh + 147px)) !important;    
+    }
 }
 
 .border::after {
